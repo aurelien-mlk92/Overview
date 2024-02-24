@@ -1,0 +1,22 @@
+.slick-slider {
+  width: 100%;
+}
+
+.slick-slide .slick-cloned {
+  overflow: hidden;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+  overflow: hidden;
+}
+
+.slick-dots li button:before {
+  color: var(--white);
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--orange);
+}

@@ -1,0 +1,222 @@
+.container_Body_User_Profile {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+  min-height: calc(100vh + 6rem);
+  justify-content: flex-start;
+  padding-bottom: 5rem;
+  padding-top: 7rem;
+}
+
+.user_Info_Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_And_Username_And_Settings_Container {
+  display: flex;
+  /* position: relative; */
+}
+
+.img_And_Username_Container {
+  display: flex;
+  align-items: center;
+  width: 60%;
+}
+
+.user_Profile_Img_Container {
+  padding: 1rem 2rem;
+}
+
+.user_Profile_Image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.input_Container {
+  display: flex;
+}
+
+.edit_Input {
+  border: none;
+  border-bottom: solid;
+  font: inherit;
+  color: inherit;
+  width: 100%;
+  background-color: inherit;
+}
+
+.save_New_Data_Btn {
+  background-color: var(--black);
+  color: inherit;
+  border-radius: 50px;
+  border: 0.1rem solid var(--white);
+  padding: 0.5em 1rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.save_New_Data_Btn:hover {
+  background-color: var(--orange);
+  border: 0.1rem solid var(--orange);
+  color: var(--black);
+}
+
+#icon_Settings {
+  cursor: pointer;
+}
+
+.settings_General_Wrapper {
+  position: relative;
+}
+
+.settings_Container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: absolute;
+  right: -8rem;
+  top: 2rem;
+  flex-direction: column;
+}
+
+.settings_Container.active {
+  background-color: var(--grey);
+  transform: translateX(0);
+  transition: var(--speed) ease;
+  border-radius: 10px;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.settings_Container.inactive {
+  transition: var(--speed) cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.dropdown_Settings {
+  background-color: var(--grey);
+  position: relative;
+  /* top: 100%;
+  right: 0; */
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown_Settings.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: var(--speed) cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  z-index: 1;
+}
+
+.dropdown_Settings.inactive {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.dropdown_Settings button {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.dropdown_Settings ul {
+  list-style: none;
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown_Settings ul:hover {
+  color: var(--orange);
+}
+
+.user_Description_Container {
+  margin: 0 2rem;
+}
+
+.user_Description {
+  text-align: left;
+  padding: 1rem;
+}
+
+.follow_Btn_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow_Btn {
+  border-radius: 50px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.follow_Btn.active {
+  border: none;
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.follow_Btn.inactive {
+  border: 0.1rem solid var(--orange);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.follow_Btn.active:hover {
+  border: 0.1rem solid var(--orange);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.follow_Btn.inactive:hover {
+  border: none;
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.error_Message {
+  text-align: left;
+  padding: 0.5rem 0;
+  color: var(--orange);
+}
+
+@media (min-width: 1024px) {
+  .video_Section {
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(295px, auto));
+    justify-content: start;
+    margin: 2rem;
+  }
+
+  .user_Description {
+    padding: 1rem 2rem;
+  }
+
+  .img_And_Username_Container {
+    width: 70%;
+  }
+  .container_Body_User_Profile {
+    padding-bottom: 0;
+  }
+}

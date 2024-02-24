@@ -1,0 +1,116 @@
+.container_Subcard_In {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.subCard_Username {
+  border: none;
+  background-color: transparent;
+  color: var(--white);
+  font-family: "poppins";
+  font-size: 20px;
+}
+
+.container_Title_Sub {
+  padding: 1.5rem;
+}
+
+.MuiTabs-root {
+  margin: 1rem 0;
+}
+.avatar {
+  margin-left: 1rem 0;
+}
+
+.avatar_And_Username_Container {
+  display: flex;
+  color: var(--white);
+  align-items: center;
+}
+
+.avatar_Container {
+  margin: 1rem;
+}
+
+.user_Sub {
+  color: var(--white);
+  margin-right: 13rem;
+}
+
+.moreVert_Icon_ContainerSub {
+  display: flex;
+  align-items: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.moreVert_Icon_ContainerSub.active {
+  background-color: var(--grey);
+  transform: translateX(0);
+  transition: var(--speed) ease;
+  color: var(--white);
+  padding: 1rem;
+  position: absolute;
+  right: 2rem;
+  border-radius: 10px;
+}
+
+.moreVert_Icon_ContainerSub.inactive {
+  /* transform: translateX(2rem);  */
+  transition: var(--speed) cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.dropdown_Menu {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  color: var(--white);
+}
+
+.dropdown_Menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: var(--speed) ease;
+}
+
+.dropdown_Menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--speed) cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.remove_Follower_Btn {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  padding: 1rem;
+}
+
+.dropdown_Menu ul {
+  list-style: none;
+  padding: 1rem;
+  text-align: left;
+}
+
+.dropdown_Menu button:hover {
+  color: var(--orange);
+}
+
+@media only screen and (min-width: 1024px) {
+  .user_Sub {
+    margin-right: 65rem;
+  }
+}

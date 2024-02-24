@@ -1,0 +1,58 @@
+.container_Body_NotFound {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 20rem; */
+}
+
+.whole_Container {
+  height: 80vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container_Title_NotFound {
+  font-size: 55px;
+  font-family: "poppins";
+  font-weight: 600;
+  color: var(--orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.four {
+  font-size: 70px;
+  font-family: "poppins";
+  font-weight: 600;
+  color: var(--orange);
+  padding: 0 0.5rem;
+}
+
+#Gauche {
+  margin-right: 1rem;
+}
+
+#Droite {
+  margin-left: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .whole_Container {
+    height: 80vh;
+  }
+  .container_Body_NotFound img {
+    width: 60px;
+    height: auto;
+  }
+  .container_Title_NotFound {
+    font-size: 60px;
+  }
+}

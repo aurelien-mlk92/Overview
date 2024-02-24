@@ -1,0 +1,37 @@
+.slick-slider {
+  width: 100%;
+  height: auto;
+}
+.slick-slide .slick-cloned {
+  overflow: hidden;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+  overflow: hidden;
+}
+
+.slick-dots li button:before {
+  color: var(--white);
+  opacity: 0.75;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--orange);
+}
+
+.slick-dots {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .slider_Home,
+  .slick-track {
+    gap: 0.5rem;
+  }
+  .slick-slider {
+    width: 295px;
+    height: auto;
+  }
+}

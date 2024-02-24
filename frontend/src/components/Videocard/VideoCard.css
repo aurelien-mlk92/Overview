@@ -1,0 +1,148 @@
+.video_Card {
+  width: 100%;
+  position: relative;
+  margin: 1.5rem 0;
+}
+.video_Thumbnail {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.video_Data {
+  display: flex;
+  padding: 0.3rem 0;
+  align-items: center;
+  justify-content: space-between;
+}
+.data_Container {
+  display: flex;
+  width: 85%;
+  margin-left: 1rem;
+  color: var(--white);
+  font-size: 16px;
+}
+.avatar_Container {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.MuiAvatar-root {
+  cursor: pointer;
+}
+
+.moreVert_Icon_Container {
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  flex-direction: column;
+}
+.moreVert_Icon_Container.active {
+  background-color: var(--grey);
+  transform: translateX(0);
+  transition: var(--speed) ease;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.moreVert_Icon_Container.inactive {
+  transition: var(--speed) cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+#icon_More_Vertical {
+  cursor: pointer;
+}
+
+.dropdown_Menu {
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.dropdown_Menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  transition: var(--speed) cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  z-index: 1;
+}
+.dropdown_Menu.inactive {
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--speed) cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.settings_dropdown_Btn {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  padding: 0;
+}
+.dropdown_Menu ul {
+  list-style: none;
+  padding: 1rem;
+  text-align: left;
+}
+.dropdown_Menu button:hover {
+  color: var(--orange);
+  cursor: pointer;
+}
+.channel_Details {
+  text-align: left;
+}
+.video_Title {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--white);
+}
+.creator_Username {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+@media (min-width: 1024px) {
+  .video_Card {
+    width: 295px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  .video_Thumbnail {
+    height: 166px;
+    width: 295px;
+    margin-bottom: 0;
+    border-radius: 10px;
+  }
+
+  .thumbnail_Container {
+    cursor: pointer;
+  }
+  .video_Data {
+    display: flex;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}

@@ -1,0 +1,30 @@
+.description_Component {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 2rem;
+  height: auto;
+  border-bottom: 0.0002rem solid;
+  border-bottom-color: var(--white);
+}
+.description_Component p {
+  font-size: 18px;
+  font-weight: 600;
+}
+.description_Component span {
+  font-size: 18px;
+}
+
+.desc_N_Coms {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .desc_N_Coms {
+    width: 100%;
+  }
+}
